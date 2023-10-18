@@ -21,6 +21,10 @@ agenda/index.html
             cell1.innerHTML = nome;
             cell2.innerHTML = telefone;
 
+            const form = document.querySelector("form");
+            form.addEventListener("submit", function() {
+            console.log("contato salvo")
+            })
             
             form.reset();
         });
